@@ -72,7 +72,7 @@ const transporter = nodemailer.createTransport(transport);
               from: "<your email address>",
               to: email,
               subject: "Submission was successful!",
-              text: `Hi there ${name}! Thanks for reaching out. I just wanted to let you know I received your message and will be in touch within 48 hours. Have a great day.\n\nForm Details:\nName: ${name}\n Email: ${email}\n Message: ${message}`
+              text: `Hi there ${name}! Thanks for reaching out. I wanted to let you know I received your message and will be in touch within 48 hours. Have a great day.\n\nForm Details:\nName: ${name}\n Email: ${email}\n Message: ${message}`
             }), function(error, info){
               if(error) {
                 console.log(error);
